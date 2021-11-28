@@ -14,7 +14,7 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    healthPoints: {
+    hp: {
       type: DataTypes.STRING,
     },
     attack: {
@@ -40,5 +40,8 @@ module.exports = (sequelize) => {
       allowNull: false,
       defaultValue: true,
     },
+  }, {
+    createdAt: false,
+    updatedAt: false,
   })
 };
