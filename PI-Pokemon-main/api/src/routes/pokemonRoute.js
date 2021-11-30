@@ -13,14 +13,14 @@ router.get('/', async (req, res, next) => {
         let finalArr = []
 
         if (name) {
-            let dbPoke = await Pokemons.findAll({
+            let dbPoke = await Pokemons.findAll({//con findAll me traigo la info de la base de datos
                 where: {
                     name: {
                         [Op.iLike]: `%${name}%` //to find aything that's kinda related. it doesn't need to be exact
                     }
                 },
                 include:{
-                    model: Types,
+                    model: Types,//lo incluye para que tome la relacion despues
                 }
             });
             try {
@@ -56,12 +56,11 @@ router.get('/', async (req, res, next) => {
                 arrayFor.push(axios.get(apiPoke[i].url))
 
             }
-            let poke = await Promise.all(arrayFor)
+            let poke = await Promise.all(arrayFor)//lo usamos como placeholder
             for (let i = 0; i < apiPoke.length; i++) {
                 let pokeI = poke[i].data;
                 let pokemon = {
                     id: pokeI.id,
-
                     name: pokeI.name,
                     healthPoints: pokeI.stats[0].base_stat,
                     attack: pokeI.stats[1].base_stat,
@@ -69,7 +68,7 @@ router.get('/', async (req, res, next) => {
                     speed: pokeI.stats[5].base_stat,
                     height: pokeI.height,
                     weight: pokeI.weight,
-                    img: pokeI.sprites.other.dream_world.front_default,
+                    img: pokeI.sprites.other.dream_world.front_default,//Buscar de donde sale
                     types: pokeI.types.map((t) => ({
                         name: t.type.name,
                         img: `https://typedex.app/types/${t.type.name}.png`,
@@ -125,7 +124,7 @@ router.get('/:id', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
     try {
-        let { name, hp, attack, defense, speed, height, weight, img, createdInBd, types } = req.body;
+        let { name, healthPoints, attack, defense, speed, height, weight, img, createdInBd, types } = req.body;
 
         let newPoke = await Pokemons.create({
             id: uuidv4(),
