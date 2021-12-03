@@ -1,13 +1,15 @@
 import React from 'react';
-import Pages from '../Pages/Pages'
+import { Link } from "react-router-dom";
+import './Home.css';
 
 
-const Home = ()=>{
+export default function Home(){
     return (
-        <div>
-            <Pages/>
-        </div>
+      <div className='home-page'>
+          <h1>Welcome to the PokeApp!</h1>
+          <Link to='/pokemon'>
+            <button id='home-button'>Start</button>
+          </Link>
+      </div>
     )
-}
-
-export default Home;
+  }
