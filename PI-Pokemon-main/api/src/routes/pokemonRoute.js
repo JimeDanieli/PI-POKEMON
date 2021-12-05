@@ -1,26 +1,27 @@
 const express = require('express');
-const axios =require('axios');
-const router= express.Router();
-const {v4: uuidv4} =require('uuid');
+const axios = require('axios');
+const router = express.Router();
+const { v4: uuidv4 } = require("uuid");
 const { Pokemons, Types } = require('../db');
 const { Op } = require('sequelize')
+
 
 router.get('/', async (req, res, next) => {
 
     try {
         let { name } = req.query
         let pokemonsTotal = []
-        let finalArr = []
+        let arrayFinal = []
 
         if (name) {
-            let dbPoke = await Pokemons.findAll({//con findAll me traigo la info de la base de datos
+            let dbPoke = await Pokemons.findAll({
                 where: {
                     name: {
-                        [Op.iLike]: `%${name}%` //to find aything that's kinda related. it doesn't need to be exact
+                        [Op.iLike]: `%${name}%`
                     }
                 },
                 include:{
-                    model: Types,//lo incluye para que tome la relacion despues
+                    model: Types,
                 }
             });
             try {
@@ -40,12 +41,13 @@ router.get('/', async (req, res, next) => {
                         img: `https://typedex.app/types/${t.type.name}.png`,
                     })),
                 }
-                finalArr.push(pokemon);
+                arrayFinal.push(pokemon);
+            
+            pokemonsTotal = dbPoke.concat(arrayFinal)
                 
             } catch (err) {
-                return res.status(201).json([...dbPoke]);
-            }
-            pokemonsTotal = dbPoke.concat(finalArr)
+                return res.status(201).json([...dbPoke])};
+            
         }
         else {
             let dbPoke = await Pokemons.findAll({ include: [Types] });
@@ -56,11 +58,12 @@ router.get('/', async (req, res, next) => {
                 arrayFor.push(axios.get(apiPoke[i].url))
 
             }
-            let poke = await Promise.all(arrayFor)//lo usamos como placeholder
+            let poke = await Promise.all(arrayFor)
             for (let i = 0; i < apiPoke.length; i++) {
                 let pokeI = poke[i].data;
                 let pokemon = {
                     id: pokeI.id,
+
                     name: pokeI.name,
                     healthPoints: pokeI.stats[0].base_stat,
                     attack: pokeI.stats[1].base_stat,
@@ -68,7 +71,7 @@ router.get('/', async (req, res, next) => {
                     speed: pokeI.stats[5].base_stat,
                     height: pokeI.height,
                     weight: pokeI.weight,
-                    img: pokeI.sprites.other.dream_world.front_default,//Buscar de donde sale
+                    img: pokeI.sprites.other.dream_world.front_default,
                     types: pokeI.types.map((t) => ({
                         name: t.type.name,
                         img: `https://typedex.app/types/${t.type.name}.png`,
@@ -83,6 +86,10 @@ router.get('/', async (req, res, next) => {
         next(error);
     }
 });
+
+
+
+
 router.get('/:id', async (req, res, next) => {
     let { id } = req.params;
     try {
@@ -100,7 +107,7 @@ router.get('/:id', async (req, res, next) => {
         else {
             var num = parseInt(id)
             let idPoke = (await axios.get(`https://pokeapi.co/api/v2/pokemon/${num}`)).data;
-            let pokemons = {
+            let pokemon = {
                 id: idPoke.id,
                 name: idPoke.name,
                 healthPoints: idPoke.stats[0].base_stat,
@@ -115,7 +122,7 @@ router.get('/:id', async (req, res, next) => {
                     img: `https://typedex.app/types/${t.type.name}.png`,
                 })),
             };
-            return res.status(200).json(pokemons)
+            return res.status(200).json(pokemon)
         }
     } catch (err) {
         next(err);
@@ -144,5 +151,6 @@ router.post('/', async (req, res, next) => {
         next(err);
     }
 });
+
 
 module.exports = router;
