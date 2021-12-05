@@ -6,6 +6,7 @@ const { Pokemons, Types } = require('../db');
 const { Op } = require('sequelize')
 
 
+
 router.get('/', async (req, res, next) => {
 
     try {
@@ -43,7 +44,7 @@ router.get('/', async (req, res, next) => {
                 }
                 arrayFinal.push(pokemon);
             
-            pokemonsTotal = dbPoke.concat(arrayFinal)
+             pokemonsTotal = dbPoke.concat(arrayFinal)
                 
             } catch (err) {
                 return res.status(201).json([...dbPoke])};
