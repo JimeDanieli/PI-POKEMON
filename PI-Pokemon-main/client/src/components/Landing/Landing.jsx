@@ -1,15 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import styles from './Landing.module.css';
+import { useHistory } from 'react-router-dom';
 
-function Landing() {
-  return (
-    <div >
-      <div >
-      <h1>Welcome to the PokeApp landing page!</h1>
-        <Link exact to='/home' >Enter</Link>      
-      </div>
-    </div>
-  );
-}
+const Landing = () => {
+    const history = useHistory();
+    const handleOnClick = () => history.push('/main');
+    return (
+        <div className={styles.ctn}>
+            <h1 className={styles.tittle} onClick={handleOnClick}>WELCOME TO THE POKEAPP</h1>
+        </div>
+    )
+};
 
 export default Landing;

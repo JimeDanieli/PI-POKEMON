@@ -1,0 +1,85 @@
+.cardPoke {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .pagination {
+    display: flex;
+    padding: 30px 700px 0px;
+  }
+  
+  .btn {
+    margin: 0 auto;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-left: none;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background-color: #000000;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.383);
+    color: rgb(0, 0, 0);
+  }
+  
+  .lo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: tittle;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: tittle;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 50px;
+    letter-spacing: 20px;
+    
+  }
+  
+  @-moz-keyframes tittle {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes tittle {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes tittle {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

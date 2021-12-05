@@ -1,0 +1,31 @@
+.btn {
+    margin: 0 auto;
+    padding: 0.4em 1.5em;
+    border: none;
+    border-left: none;
+    color: rgb(255, 255, 255);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background-color: #000000;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.383);
+    color: rgb(0, 0, 0);
+  }
+  
+  .input {
+    margin: o auto;
+    border: none;
+    width: 300px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0.4em;
+    font-family: inherit;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    margin-right: 15px;
+  }
