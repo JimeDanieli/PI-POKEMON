@@ -1,28 +1,32 @@
-.cont {
+.container {
     padding-top: 30px;
+    padding-bottom: 90px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: space-around;
+    background-image: url(../Filters/emmmmm.jpg);
+    
   }
   
   .title {
     color: rgb(0, 0, 0);
+    background-color: cornsilk;
     letter-spacing: 1px;
     font-size: 20px;
     margin-bottom: 3px;
   }
   
   .label {
-    color: rgb(0, 0, 0);
+    color: rgb(73, 70, 70);
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 15px;
   }
   
   .select {
-    border: none;
+    border: solid;
     height: 25px;
     width: 100px;
   }

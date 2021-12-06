@@ -40,12 +40,12 @@ const Pages = () => {
                 <div className={styles.pagination}>
                     {currentPage > 0 ? (
                         <button className={styles.btn} onClick={prevPage}>
-                            Prev Page
+                            Prev 
                         </button>
                     ) : null}
                     {currentPage < 36 ? (
                         <button className={styles.btn} onClick={nextPage}>
-                            Next Page
+                            Next 
                         </button>
                     ) : null}
                 </div>
@@ -61,7 +61,7 @@ const Pages = () => {
                 }
             </div >
         );
-        return pokemonsI.length ? pokeComponent() : <div className={styles.lo}>LOADING</div>
+        return pokemonsI.length ? pokeComponent() : <div className={styles.loading} />
     }
     
 }

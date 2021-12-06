@@ -19,10 +19,10 @@ const PokeDetail= ()=>{
 
     if(poke.name){
         return(
-            <div className={styles.ctnSuperior}>
+            <div  className={styles.cont} >
                 <h2 className={styles.title}>{poke.name.toUpperCase()}</h2>
 
-                <div className={styles.ctnDetail} key={poke.id}>
+                <div className={styles.cont} key={poke.id}>
 
                     <div>
                         <img className={styles.imgDetails} sre={poke.img} alt={poke.name}/>
@@ -30,7 +30,7 @@ const PokeDetail= ()=>{
 
                 <div className={styles.detail}>
   
-                <h2 className={styles.abi}>Abilities</h2>
+                <h2 className={styles.abilities}>ABILITIES</h2>
 
                 <div className={styles.text}>
                      <p>healthPoints {poke.healthPoints} </p>
@@ -53,12 +53,12 @@ const PokeDetail= ()=>{
                 </div>
 
                 <div className={styles.text}>
-                    <p>Height {poke.height} kg</p>
+                    <p>Height {poke.height} m</p>
                     <meter value={poke.height} min="0" low="30" high="170" optimum="100" max="200"></meter>
                 </div>
 
                 <div className={styles.text}>
-                   <p>Weight {poke.weight} m </p>
+                   <p>Weight {poke.weight} kg </p>
                    <meter value={poke.weight} min="0" low="30" high="170" optimum="100" max="200"></meter>
                 </div>
 

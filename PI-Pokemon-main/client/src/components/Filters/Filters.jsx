@@ -31,7 +31,7 @@ const Filters = () => {
 
     return (
 
-        <div className={styles.cont}>
+        <div className={styles.container}>
             <div>
                 <h4 className={styles.title}>Order</h4>
                 <label className={styles.label} htmlFor="">Alphabetically  </label>

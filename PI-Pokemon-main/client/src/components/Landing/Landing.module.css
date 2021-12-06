@@ -1,5 +1,5 @@
 .ctn {
-   /*  background-image: url(); */
+    background-image: url(../Landing/bg_welcome.jpg); 
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -14,14 +14,14 @@
     transition: all 1s ease-out;
     cursor: pointer;
     text-align: center;
-    color: #14141449;
+    color:rgb(214, 228, 23);
     font-size: 5em;
     letter-spacing: 6px;
-    text-shadow: 0 0 5px rgb(255, 255, 0), 0 0 10px rgb(255, 251, 0),
-      0 0 20px rgb(240, 225, 13), 0 0 40px rgb(243, 255, 79),
-      0 0 80px rgb(240, 243, 70), 0 0 90px rgb(214, 228, 23),
-      0 0 100px rgb(223, 219, 28), 0 0 140px rgb(224, 246, 22),
-      0 0 180px rgb(234, 255, 49);
+    text-shadow: 0 0 5px rgb(4, 0, 255), 0 0 10px rgb(4, 0, 255),
+      0 0 20px rgb(4, 0, 255), 0 0 40px rgb(4, 0, 255),
+      0 0 80px rgb(4, 0, 255), 0 0 90px rgb(4, 0, 255),
+      0 0 100px rgb(4, 0, 255), 0 0 140px rgb(4, 0, 255),
+      0 0 180px rgb(4, 0, 255);
   }
   
   .tittle:hover {

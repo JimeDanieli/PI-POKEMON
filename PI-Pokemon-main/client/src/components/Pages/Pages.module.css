@@ -2,11 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background-color: #fcfcacf3;
   }
   
   .pagination {
     display: flex;
-    padding: 30px 700px 0px;
+    padding: 8px 700px 0px;
+    background-color:#fcfcacf3;
   }
   
   .btn {
@@ -14,39 +16,49 @@
     padding: 0.5em 1.5em;
     border: none;
     border-left: none;
-    color: rgb(255, 255, 255);
-    font-family: inherit;
+    color: rgb(241, 245, 47);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
-    font-size: 12px;
-    letter-spacing: 1px;
-    background-color: #000000;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background-color: #303df5;
     cursor: pointer;
   }
   
   .btn:hover {
     background-color: rgba(255, 255, 255, 0.383);
-    color: rgb(0, 0, 0);
+    color: rgb(218, 233, 18);
   }
   
-  .lo {
+  .loading {
+    background: url(pikachu-loading.gif);
     position: absolute;
-    top: 50%;
+    top: 0%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    animation-name: tittle;
+    /*transform: translate(-50%, -50%);
+    animation-name: tittle; 
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    -webkit-animation-name: tittle;
+   -webkit-animation-name: tittle; 
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
     font-family: inherit;
     font-weight: 600;
     font-size: 50px;
-    letter-spacing: 20px;
+    letter-spacing: 20px;  */
+    width: auto ;
+    position: absolute;
+    display: block; 
+    width: 230px;
+    height: 50px;
     
-  }
+
+}
+    
+    
+  
   
   @-moz-keyframes tittle {
     0% {
