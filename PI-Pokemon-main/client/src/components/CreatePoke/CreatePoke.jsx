@@ -189,11 +189,11 @@ function CreatePoke() {
         <div className={styles.carCtnSup}>
           <h4 className={styles.titletype}>Select the types:</h4>
           <div className={styles.carTypes} onChange={handleType} value={values.types}>
-            {types.map((t, k) => (
+            {types.map((type, k) => (
               <div className={styles.types} key={k}>
-                <input value={t.id} type="checkbox" id="check1" />
-                <img className={styles.typeImg} src={t.img} alt="" />
-                <label id="check1">  {t.name.charAt(0).toUpperCase() + t.name.slice(1)} </label>
+                <input value={type.id} type="checkbox" id="check1" />
+                <img className={styles.typeImg} src={type.img} alt="" />
+                <label id="check1">  {type.name.charAt(0).toUpperCase() + type.name.slice(1)} </label>
 
               </div>
             ))}

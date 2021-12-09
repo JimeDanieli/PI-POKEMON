@@ -5,8 +5,10 @@ import {Link} from 'react-router-dom';
 const PokeCard =({poke}) =>{
     return(
         <div className={styles.card} key={poke.id}>
+             
             <Link className={styles.title} to={`/main/detail/${poke.id}`}>
             <div>
+                
                 <img className={styles.img} src={poke.img} alt={poke.name}/>
             </div>
             <div className={styles.cardText}>
@@ -17,6 +19,7 @@ const PokeCard =({poke}) =>{
                     poke.types &&poke.types.map((t,k) =>{
                         return(
                             <div className={styles.icon} key={k}>
+                        
                                 <img className={styles.typesImg} src={t.img} alt={t.name}/>
                                 <p className={styles.text}>{t.name.charAt(0).toUpperCase() + t.name.slice(1)}</p>
                             </div>

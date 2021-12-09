@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux';
 import {useParams} from 'react-router-dom';
 import { getPokeDetail,unmountGetPoke } from '../../actions';
 import styles from './PokeDetail.module.css'
+import { NavLink } from 'react-router-dom';
 
 const PokeDetail= ()=>{
     const dispatch =useDispatch();
@@ -20,6 +21,11 @@ const PokeDetail= ()=>{
     if(poke.name){
         return(
             <div  className={styles.cont} >
+                <NavLink to='/main/createPoke'> 
+                <button className={styles.btn}>
+                 Create pokemon!
+                </button>
+                </NavLink>
                 <h2 className={styles.title}>{poke.name.toUpperCase()}</h2>
 
                 <div className={styles.cont} key={poke.id}>
@@ -64,11 +70,11 @@ const PokeDetail= ()=>{
 
             <div>
                  {
-                 poke.types && poke.types.map((t, k) => {
+                 poke.types && poke.types.map((type, k) => {
                      return (
                          <div className={styles.types} key={k}>
-                            <img className={styles.typesImg} src={t.img} alt={t.name} />
-                            <p > {t.name.charAt(0).toUpperCase() + t.name.slice(1)} </p>
+                            <img className={styles.typesImg}  src={type.img} alt={type.name} />
+                            <p > {type.name.charAt(0).toUpperCase() + type.name.slice(1)} </p>
                         </div>
                     )
                 })

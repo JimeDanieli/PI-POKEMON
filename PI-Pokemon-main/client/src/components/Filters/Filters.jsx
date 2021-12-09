@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { filterCreated, orderName, filterType, getTypes } from '../../actions/index';
+
 import styles from './Filters.module.css'
 
 const Filters = () => {
-    const dispatch = useDispatch()
-    const { types } = useSelector((state) => state);
+    const dispatch = useDispatch()//manda la action al reducer
+    const { types } = useSelector((state) => state);//me trae una cierta info seleccionada, parecido al mapStateToProps
 
 
-    useEffect(() => {
+    useEffect(() => {//toma el valor inicial de mi state y devuelve array con el valor del state y la funcion para setear el nuevo state
         dispatch(getTypes());
     }, [dispatch]);
 
@@ -41,6 +42,7 @@ const Filters = () => {
                     <option value="desc">Z-A</option>
                 </select>
             </div>
+    
             <div>
                 <h4 className={styles.title}>Filters</h4>
                 <label className={styles.label} htmlFor=""> Created - Api  </label>
@@ -56,9 +58,9 @@ const Filters = () => {
                 <label className={styles.label} htmlFor=""> Types  </label>
                 <select className={styles.select} onChange={e => handleFilterType(e)} >
                     {
-                        types.map((t, k) => (
-                            <option value={t.name} key={k}  >
-                                {t.name.charAt(0).toUpperCase() + t.name.slice(1)}
+                        types.map((type, k) => (
+                            <option value={type.name} key={k}  > {/* funciona como selector */}
+                                {type.name.charAt(0).toUpperCase() + type.name.slice(1)}
                             </option>
                         ))
                     }

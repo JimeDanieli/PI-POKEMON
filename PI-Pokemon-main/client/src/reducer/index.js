@@ -17,8 +17,6 @@ const initialState = {
     poke: {},
     types: [],
 
-
-
 };
 
 function rootReducer(state = initialState, action) {

@@ -1,26 +1,37 @@
-/* .ctnSuperior {
+.btn{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+
+.topCont {
     justify-content: center;
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     
-  } */
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    background-color: rgb(236, 234, 77);
+    
+  }
   
   .cont {
     display: flex;
     justify-content: center;
     position: relative;
     align-items: center;
-    background-color: rgb(236, 234, 77);
+ /*    background-image: url(../PokeDetail/back.jpg); */
+    margin-top: 200px rgb(236, 234, 77) ;
+    padding-bottom: 300px;
+    padding-top: 0px;
+    
   }
   
   .title {
     color: rgb(0, 0, 0);
     font-size: 60px;
     letter-spacing: 30px;
-    text-align: top;
-    margin-left: 100px;
+    text-align: center ;
+    /* margin-left: 80px; */
+    
   }
   
   meter {

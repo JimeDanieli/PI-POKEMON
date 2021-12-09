@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "PokemonGb-RAeo";
+  src: url("./utils/font_gba.ttf") format("truetype");
+}
 .App {
   text-align: center;
+   font-family:"PokemonGb-RAeo" ; 
 }
 
 .App-logo {

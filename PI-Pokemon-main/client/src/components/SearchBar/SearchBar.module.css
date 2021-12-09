@@ -3,12 +3,12 @@
     padding: 0.4em 1.5em;
     border: none;
     border-left: none;
-    color: rgb(209, 52, 52);
+    color: rgb(252, 252, 147);
     font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 1px;
-    background-color: #000000;
+    background-color: rgba(70, 70, 70, 0.63);
     cursor: pointer;
   }
   

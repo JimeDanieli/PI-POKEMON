@@ -1,6 +1,6 @@
 .container {
-    padding-top: 30px;
-    padding-bottom: 90px;
+    padding-top: 50px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -8,14 +8,16 @@
     justify-content: space-around;
     background-image: url(../Filters/emmmmm.jpg);
     
+    
   }
   
   .title {
-    color: rgb(0, 0, 0);
-    background-color: cornsilk;
+    color: rgb(252, 252, 147);
+    background-color:rgba(70, 70, 70, 0.63);
     letter-spacing: 1px;
     font-size: 20px;
     margin-bottom: 3px;
+    text-align: center;
   }
   
   .label {
