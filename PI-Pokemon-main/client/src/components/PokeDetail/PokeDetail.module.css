@@ -1,58 +1,52 @@
-.btn{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-}
-
 .topCont {
     justify-content: center;
-    
+    position: absolute;
+    top: 45%;
     left: 50%;
-    transform: translate(-50%, -50%) ;
-    background-color: rgb(236, 234, 77);
+    transform: translate(-50%, -50%);
+    
     
   }
   
   .cont {
-    display: flex;
+   /*  display: flex; */
     justify-content: center;
     position: relative;
-    align-items: center;
- /*    background-image: url(../PokeDetail/back.jpg); */
-    margin-top: 200px rgb(236, 234, 77) ;
-    padding-bottom: 300px;
-    padding-top: 0px;
+    background-image: url('../PokeDetail/back.jpg');
+    padding-bottom: 600px;
+   
     
   }
   
   .title {
     color: rgb(0, 0, 0);
-    font-size: 60px;
-    letter-spacing: 30px;
-    text-align: center ;
-    /* margin-left: 80px; */
-    
+    font-size: 80px;
+    letter-spacing: 60px;
+    text-align: center;
+    margin-left: 100px;
   }
   
   meter {
-    margin-left: 10px;
+    margin-right: 600px;
     width: 250px;
     height: 25px;
     border: 4px solid rgb(0, 0, 0);
   }
   
-  .detail {
-    color: rgb(0, 0, 0);
-    font-size: 18px;
-    letter-spacing: 3px;
-    width: 500px;
-    transition: all 2s ease-out;
+  .btn{
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: yellow;
+    font-size: 15px;
+    color: grey;
   }
   
   .detail:hover {
     transition: all 2s ease-out;
     font-size: 32px;
-    width: 600px;
+    width: 300px; 
     letter-spacing: 6px;
     margin-right: 300px;
   }
@@ -60,10 +54,12 @@
   .abilities {
     font-style: normal;
     color: rgb(0, 0, 0);
-    font-weight: 600;
+    
     font-size: 50px;
     letter-spacing: 4px;
-    padding-bottom: 5px;
+    /* margin-top: 50px; */
+    margin-left: 850px;
+    
   }
   
   .text {
@@ -72,34 +68,37 @@
     align-items: center;
     margin-top: 5px;
     font-style:italic;
+    margin-left: 600px;
+    font-size: 35px;
   }
   
   .imgDetails {
-    height: 700px;
-    width: 700px;
+    height: 300px;
+    width: 300px;
     margin-right: 50px;
-    -webkit-filter: drop-shadow(50px 10px 10px rgba(0, 0, 0, 0.39));
-    filter: drop-shadow(50px 50px 10px rgba(0, 0, 0, 0.596));
-    transition: all 2s ease-out;
+   /*  -webkit-filter: drop-shadow(50px 10px 10px rgba(0, 0, 0, 0.39));
+    filter: drop-shadow(50px 50px 10px rgba(0, 0, 0, 0.596)); */
+    margin-top: 200;
+   
   }
   
   .imgDetails:hover {
-    transition: all 2s ease-out;
-    height: 1200px;
-    width: 1200px;
-    -webkit-filter: drop-shadow(100px 100px 0px rgba(0, 0, 0, 0.596));
-    filter: drop-shadow(100px 100px 5px rgba(0, 0, 0, 0.815));
+    margin-top: 150;
+    height: 200px;
+    width: 200px;
+    -webkit-filter: drop-shadow(80px 80px 0px rgba(0, 0, 0, 0.596));
+    filter: drop-shadow(80px 80px 5px rgba(0, 0, 0, 0.815));
     justify-content: center;
   }
   
   .types {
     font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    display: inline-block;
     text-align: center;
-    margin-right: 30px;
-    margin-top: 15px;
+    flex-direction: row;
+    display: flex;
+    margin-bottom: 500px;
+    margin-left: 60px;
+    padding-bottom: 500px;
   }
   
   .typesImg {

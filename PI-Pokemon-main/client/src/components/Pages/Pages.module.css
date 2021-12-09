@@ -1,27 +1,23 @@
 .cardPoke {
-/*     flex-direction: row;
+   /*  flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;*/
-    background-color: #fcfcacf3;  
-    
+      background-color: #fcfcacf3;  
       float: right;
-      width: 90vw;
-      height: 85vh;
-      /* margin-right: 2.5vw; */
-     /*  margin-left: 0px ; */
+      width: 98.7vw;
+      height: 95vh;
+      margin-right: 1.1vw; 
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
       overflow-y:scroll ;
-
-  
   }
   
   .pagination {
     display: flex;
     /* padding: 8px 700px 0px; */
     background-color:#fcfcacf3;
-    /* margin-left: 200px; */
+    
     
   }
   
@@ -48,7 +44,7 @@
    /*  background: url(pikachu-loading.gif); */
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%, -50%);
     animation-name: tittle; 
     animation-duration: 0.5s;
@@ -61,15 +57,16 @@
     font-family: inherit;
     font-weight: 600;
     font-size: 50px;
-    letter-spacing: 20px;  
+    letter-spacing: 10px;  
     width: auto ;
     position: absolute;
     display: block; 
-    width: 230px;
-    height: 50px;
-    
+    width: 1000px;
+    height: 250px;
 
-}
+}  
+
+
     
     
   

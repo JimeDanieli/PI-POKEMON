@@ -66,7 +66,7 @@ const Pages = () => {
                 }
             </div >
         );
-        return allPokemons.length ? pokeComponent() : <div className={styles.loading} />
+        return allPokemons.length ? pokeComponent() : <div className={styles.loading}>   L O A D I N G ... </div>
     }
     
 }

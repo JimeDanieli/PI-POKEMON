@@ -30,16 +30,16 @@ const PokeDetail= ()=>{
 
                 <div className={styles.cont} key={poke.id}>
 
-                    <div>
-                        <img className={styles.imgDetails} sre={poke.img} alt={poke.name}/>
-                    </div>
+                     <h2 className={styles.abilities}>ABILITIES</h2>
+                        <img className={styles.imgDetails} src={poke.img} alt={poke.name}/>
+                    
 
-                <div className={styles.detail}>
+            {/*     <div className={styles.detail}> */}
   
-                <h2 className={styles.abilities}>ABILITIES</h2>
+               
 
                 <div className={styles.text}>
-                     <p>healthPoints {poke.healthPoints} </p>
+                     <p>Health Points {poke.healthPoints} </p>
                     <meter value={poke.healthPoints} min="0" low="30" high="170" optimum="100" max="200"></meter>
                 </div>
 
@@ -68,22 +68,24 @@ const PokeDetail= ()=>{
                    <meter value={poke.weight} min="0" low="30" high="170" optimum="100" max="200"></meter>
                 </div>
 
-            <div>
+            <div>     
+                    <div className={styles.types} >
                  {
                  poke.types && poke.types.map((type, k) => {
                      return (
-                         <div className={styles.types} key={k}>
+                      <div key={k}>
                             <img className={styles.typesImg}  src={type.img} alt={type.name} />
                             <p > {type.name.charAt(0).toUpperCase() + type.name.slice(1)} </p>
                         </div>
                     )
                 })
                }
+               </div>
             </div>
 
           </div>
         </div>
-    </div>
+    /* </div> */
     )
   } else {
      return null;

@@ -35,7 +35,7 @@ const Filters = () => {
         <div className={styles.container}>
             <div>
                 <h4 className={styles.title}>Order</h4>
-                <label className={styles.label} htmlFor="">Alphabetically  </label>
+                <label className={styles.title} htmlFor="">Alphabetically  </label>
                 <select className={styles.select} onChange={e => handleSort(e)} >
                     <option >-</option>
                     <option value="asc">A-Z</option>
@@ -45,7 +45,7 @@ const Filters = () => {
     
             <div>
                 <h4 className={styles.title}>Filters</h4>
-                <label className={styles.label} htmlFor=""> Created - Api  </label>
+                <label className={styles.title} htmlFor=""> Created - Api  </label>
                 <select className={styles.select} onChange={e => handleFilterCreated(e)} >
                     <option >-</option>
                     <option value="all">All Pokemons </option>
@@ -55,7 +55,7 @@ const Filters = () => {
 
 
 
-                <label className={styles.label} htmlFor=""> Types  </label>
+                <label className={styles.title} htmlFor=""> Types  </label>
                 <select className={styles.select} onChange={e => handleFilterType(e)} >
                     {
                         types.map((type, k) => (

@@ -114,11 +114,12 @@ function CreatePoke() {
   };
 
   return (
-    <div>
+    <div className={styles.container}>
       <h2 className={styles.title}>Create Pokemon</h2>
       <div className={styles.cntSuperior}>
         <form onSubmit={handleOnSubmit}>
           <div>
+            <h4 className={styles.titletype}>Select the types:</h4>
             <label className={styles.label} htmlFor=""> Name:</label>
             <input
               className={styles.input} value={values.name} name='name' onChange={handleOnChange} type="text" placeholder='Name'>
@@ -182,12 +183,12 @@ function CreatePoke() {
             <p className={styles.error}>{errors.weight}</p>
           </div>
 
-          <button className={styles.btn}> Create</button>
+          
 
-        </form>
+        
 
         <div className={styles.carCtnSup}>
-          <h4 className={styles.titletype}>Select the types:</h4>
+          
           <div className={styles.carTypes} onChange={handleType} value={values.types}>
             {types.map((type, k) => (
               <div className={styles.types} key={k}>
@@ -197,9 +198,11 @@ function CreatePoke() {
 
               </div>
             ))}
+           
+            <button className={styles.btn}> Create</button>
           </div>
         </div>
-
+ </form>
       </div>
     </div>
   );

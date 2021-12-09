@@ -1,11 +1,10 @@
 
 .container {
-    display: flex;
     justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-image: url('../CreatePoke/back.jpg');
+    justify-content: space-around;
+    overflow:hidden;
+    padding-bottom: 300px;
   }
   
   .title {
@@ -23,6 +22,8 @@
     font-size: 20px;
     letter-spacing: 1px;
     display: flex;
+    align-items: center;
+    margin-left: 800px;
   }
   
   .input {
@@ -32,22 +33,25 @@
     padding: 2.7px 10px 2.7px 10px;
     width: 400px;
     height: 30px;
+    align-items: center;
+    margin-left: 800px;
   }
   
   .titletype {
     margin: 12px 0px 3px 0px;
-    font-weight: 600;
     font-size: 25px;
     letter-spacing: 1px;
+    
   }
   
   .carCtnSup {
     margin-left: 40px;
+    margin-top: 80px;
   }
   
   .types {
     display: flex;
-    margin-top: 8px;
+    margin-top: -50px;
     align-items: center;
     font-weight: 600;
     font-size: 16px;
@@ -60,17 +64,17 @@
   }
   
   .btn {
-    margin-top: 20px;
+    margin-top: 600px;
     padding: 1em 10.2em;
     border: 0;
-    color: rgb(214, 34, 34);
+    color: rgb(245, 243, 110);
     font-weight: 600;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px;
-    background-color: #c91919;
+    background-color: #888782;
     cursor: pointer;
-    width: 100%;
+    
   }
   
   .btn:hover {
