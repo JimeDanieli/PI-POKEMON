@@ -5,7 +5,7 @@
       background-image: url(../Pages/back.jpg);
       background-attachment: fixed;
       background-position: center;
-            background-repeat: no-repeat;
+      background-repeat: no-repeat;
       float: right;
       width: 1550px;
       height: 580px;
@@ -15,6 +15,7 @@
       justify-content: space-around;
       flex-wrap: wrap;
       overflow-y:scroll ;
+      font-family: url(../Pages/font_gba.ttf);
   }
   
   .pagination {
@@ -32,7 +33,7 @@
     border: none;
     border-left: none;
     color: rgb(220, 233, 238);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: url(../Pages/font_gba.ttf);
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 2px;
@@ -47,8 +48,9 @@
   
   .loading {
    /*  background: url(pikachu-loading.gif); */
+   font-family: url(../Pages/font_gba.ttf);
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 60%;
     transform: translate(-50%, -50%);
     animation-name: tittle; 
@@ -59,7 +61,6 @@
     -webkit-animation-duration: 0.5s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
-    font-family: inherit;
     font-weight: 600;
     font-size: 50px;
     letter-spacing: 10px;  

@@ -7,17 +7,18 @@
     align-items: baseline;
     justify-content: space-around;
     background-image: url(../Filters/back.jpg);
-   
+    font-family: url(../Pages/font_gba.ttf);
     
   }
   
   .title {
-    color: rgb(252, 252, 147);
-    background-color:rgba(70, 70, 70, 0.63);
+    color: rgb(220, 233, 238);
+    background-color: rgba(78, 67, 67, 0.336);
     letter-spacing: 1px;
     font-size: 20px;
     margin-bottom: 3px;
     text-align: center;
+    font-family: url(../Pages/font_gba.ttf);
   }
   
   .label {

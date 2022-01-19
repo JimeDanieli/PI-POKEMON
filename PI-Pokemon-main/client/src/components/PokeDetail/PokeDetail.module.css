@@ -14,7 +14,9 @@
     position: relative;
     background-image: url('../PokeDetail/back.jpg');
     padding-bottom: 600px;
-   
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     
   }
   
