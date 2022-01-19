@@ -31,18 +31,18 @@
     padding: 0.5em 1.5em;
     border: none;
     border-left: none;
-    color: rgb(241, 245, 47);
+    color: rgb(220, 233, 238);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 2px;
-    background-color: #6a6a6b;
+    background-color: rgba(78, 67, 67, 0.336);
     cursor: pointer;
   }
   
   .btn:hover {
-    background-color: rgba(70, 70, 70, 0.336);
-    color: rgb(218, 233, 18);
+    background-color: rgba(78, 67, 67, 0.336);
+    color: rgb(126, 214, 236);
   }
   
   .loading {
