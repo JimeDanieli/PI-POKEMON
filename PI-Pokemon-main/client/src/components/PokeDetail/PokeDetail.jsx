@@ -28,15 +28,10 @@ const PokeDetail= ()=>{
                 </NavLink>
                 <h2 className={styles.title}>{poke.name.toUpperCase()}</h2>
 
-                <div className={styles.cont} key={poke.id}>
+                <div className={styles.cont}  key={poke.id}>
 
                      <h2 className={styles.abilities}>ABILITIES</h2>
                         <img className={styles.imgDetails} src={poke.img} alt={poke.name}/>
-                    
-
-            {/*     <div className={styles.detail}> */}
-  
-               
 
                 <div className={styles.text}>
                      <p>Health Points {poke.healthPoints} </p>
@@ -67,7 +62,7 @@ const PokeDetail= ()=>{
                    <p>Weight {poke.weight} kg </p>
                    <meter value={poke.weight} min="0" low="30" high="170" optimum="100" max="200"></meter>
                 </div>
-
+                
             <div>     
                     <div className={styles.types} >
                  {
