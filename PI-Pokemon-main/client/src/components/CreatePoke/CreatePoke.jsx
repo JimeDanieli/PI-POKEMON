@@ -96,9 +96,10 @@ function CreatePoke() {
       !errors.heightt &&
       !errors.weight &&
       !errors.types) {
+        console.log(values)
       dispatch(createPoke(values));
       stateReset();
-      history.push('/main ');
+      history.push('/main');
 
     } else {
       alert('The form is required');
@@ -119,7 +120,6 @@ function CreatePoke() {
       <div className={styles.cntSuperior}>
         <form onSubmit={handleOnSubmit}>
           <div>
-            <h4 className={styles.titletype}>Select the types:</h4>
             <label className={styles.label} htmlFor=""> Name:</label>
             <input
               className={styles.input} value={values.name} name='name' onChange={handleOnChange} type="text" placeholder='Name'>
@@ -136,9 +136,9 @@ function CreatePoke() {
           </div>
 
           <div>
-            <label className={styles.label} htmlFor=""> healthPoints:</label>
+            <label className={styles.label} htmlFor=""> Health Points:</label>
             <input
-              className={styles.input} value={values.healthPoints} name='healthPoints' onChange={handleOnChange} type="text" placeholder='Hp'>
+              className={styles.input} value={values.healthPoints} name='healthPoints' onChange={handleOnChange} type="text" placeholder='Health Points'>
             </input>
             <p className={styles.error}>{errors.healthPoints}</p>
           </div>
@@ -183,9 +183,9 @@ function CreatePoke() {
             <p className={styles.error}>{errors.weight}</p>
           </div>
 
-          
+          <button className={styles.btn}> Create</button>
 
-        
+        </form>
 
         <div className={styles.carCtnSup}>
           
@@ -198,11 +198,9 @@ function CreatePoke() {
 
               </div>
             ))}
-           
-            <button className={styles.btn}> Create</button>
           </div>
         </div>
- </form>
+
       </div>
     </div>
   );

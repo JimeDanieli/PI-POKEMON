@@ -14,8 +14,6 @@ const Pages = () => {
     const dispatch = useDispatch();
     const { pokemons } = useSelector(state => state);
     const name = query.get('name');
-
-
     const [currentPage, setCurrentPage] = useState(0);
     const allPokemons = pokemons.slice(currentPage, currentPage + 12);
 

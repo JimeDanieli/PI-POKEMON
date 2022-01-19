@@ -28,6 +28,17 @@ export const getPokemons = (name) => async (dispatch) => {
 };
 
 export const getPokeDetail = (id) => async (dispatch) => {
+   /*  axios.get(`/pokemons/${id}`)
+    .then(res =>{
+        dispatch ({
+            type: GET_POKE_DETAIL,
+            payload: res.data
+        })
+    }) .catch(error=>{
+        console.log(error)
+    }) */
+
+    
     try {
         const res = await axios.get(`/pokemons/${id}`);
         return dispatch({

@@ -1,12 +1,12 @@
 .container {
-    padding-top: 50px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: baseline;
     justify-content: space-around;
-    background-image: url(../Filters/emmmmm.jpg);
+    background-image: url(../Filters/back.jpg);
    
     
   }

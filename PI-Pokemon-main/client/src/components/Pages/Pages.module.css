@@ -2,11 +2,15 @@
    /*  flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;*/
-      background-color: #fcfcacf3;  
+      background-image: url(../Pages/back.jpg);
+      background-attachment: fixed;
+      background-position: center;
+            background-repeat: no-repeat;
       float: right;
-      width: 98.7vw;
-      height: 95vh;
-      margin-right: 1.1vw; 
+      width: 1550px;
+      height: 580px;
+      margin-right: -18px; 
+      margin-left: 0px;
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -16,7 +20,8 @@
   .pagination {
     display: flex;
     /* padding: 8px 700px 0px; */
-    background-color:#fcfcacf3;
+    /* background-color:#fcfcacf3; */
+    background-image: url(../Pages/back.jpg);
     
     
   }

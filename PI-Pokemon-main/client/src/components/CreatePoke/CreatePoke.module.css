@@ -36,26 +36,26 @@
     align-items: center;
     margin-left: 800px;
   }
-  
+  .carTypes{
+    margin-top: -500px;
+  }
   .titletype {
-    margin: 12px 0px 3px 0px;
+    /* margin: 12px 0px 3px 0px; */
     font-size: 25px;
     letter-spacing: 1px;
-    
+    margin-left: 150px ;
+    margin-top: 150px;
+   
   }
   
-  .carCtnSup {
-    margin-left: 40px;
-    margin-top: 80px;
-  }
   
   .types {
     display: flex;
-    margin-top: -50px;
     align-items: center;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     letter-spacing: 1px;
+    margin-left: 60px;
   }
   
   .typeImg {
@@ -64,7 +64,8 @@
   }
   
   .btn {
-    margin-top: 600px;
+    margin-top: 40px;
+    margin-left: 60px;
     padding: 1em 10.2em;
     border: 0;
     color: rgb(245, 243, 110);
@@ -75,11 +76,13 @@
     background-color: #888782;
     cursor: pointer;
     
+    
   }
   
   .btn:hover {
     background-color: rgba(255, 255, 255, 0.383);
     color: rgb(0, 0, 0);
+    margin-left: 60px;
   }
   
   .error {
