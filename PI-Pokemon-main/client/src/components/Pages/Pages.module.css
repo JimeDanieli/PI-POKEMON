@@ -1,7 +1,7 @@
 .cardPoke {
-   /*  flex-direction: row;
+     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;*/
+    justify-content: center;
       background-image: url(../Pages/back.jpg);
       background-attachment: fixed;
       background-position: center;
@@ -12,7 +12,7 @@
       margin-right: -18px; 
       margin-left: 0px;
       display: flex;
-      justify-content: space-around;
+      /* justify-content: space-around; */
       flex-wrap: wrap;
       overflow-y:scroll ;
       font-family: url(../Pages/font_gba.ttf);
