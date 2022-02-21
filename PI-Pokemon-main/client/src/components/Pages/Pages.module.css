@@ -6,15 +6,12 @@
       background-attachment: fixed;
       background-position: center;
       background-repeat: no-repeat;
-      /* float: center;
-      width: 1550px;
-      height: 580px;
-      margin-left: 0px; */
+      width: 1920px;
+      height: 860px;
       display: flex;
       justify-content: center; 
       flex-wrap: wrap;
       overflow-y: scroll ;
-
   }
   
   .pagination {
