@@ -28,9 +28,10 @@ const PokeDetail= ()=>{
                 </NavLink>
                 <h2 className={styles.title}>{poke.name.toUpperCase()}</h2>
 
-                <div className={styles.cont}  key={poke.id}>
+                <div /* className={styles.cont} */  key={poke.id}>
 
                      <h2 className={styles.abilities}>ABILITIES</h2>
+                     
                         <img className={styles.imgDetails} src={poke.img} alt={poke.name}/>
 
                 <div className={styles.text}>
