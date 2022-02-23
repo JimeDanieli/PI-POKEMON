@@ -51,12 +51,12 @@
   
   .types {
     display: flex;
-    align-items: center;
+    align-items:flex-start ;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1px;
-    margin-left: 60px;
-
+    margin-left: 90px;
+    
   }
   
   .typeImg {
