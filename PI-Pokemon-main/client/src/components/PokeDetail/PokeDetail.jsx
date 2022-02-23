@@ -23,7 +23,7 @@ const PokeDetail= ()=>{
             <div  className={styles.cont} >
                 <NavLink to='/main/createPoke'> 
                 <button className={styles.btn}>
-                 Create pokemon!
+                 Create Pokemon!
                 </button>
                 </NavLink>
                 <h2 className={styles.title}>{poke.name.toUpperCase()}</h2>
