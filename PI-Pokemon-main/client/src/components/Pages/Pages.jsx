@@ -7,8 +7,6 @@ import styles from './Pages.module.css'
 import Filters from '../Filters/Filters'
 import SearchBar from '../SearchBar/SearchBar'
 
-
-
 const Pages = () => {
     const query = new URLSearchParams(useLocation().search.slice(1));
     const dispatch = useDispatch();
@@ -37,7 +35,6 @@ const Pages = () => {
         const pokeComponent = () => (
             <div >
                 <SearchBar/>
-                
                 <Filters />
                 <div className={styles.pagination}>
                     {currentPage > 0 ? (
