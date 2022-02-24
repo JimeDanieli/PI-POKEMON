@@ -119,7 +119,7 @@ function CreatePoke() {
       <h2 className={styles.title}>Create Pokemon</h2>
       <div className={styles.cntSuperior}>
         <form onSubmit={handleOnSubmit}>
-          <div>
+          <div >
             <label className={styles.label} htmlFor=""> Name:</label>
             <input
               className={styles.input} value={values.name} name='name' onChange={handleOnChange} type="text" placeholder='Name'>
