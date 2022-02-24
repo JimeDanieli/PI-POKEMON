@@ -92,6 +92,7 @@
     -webkit-filter: drop-shadow(80px 80px 0px rgba(0, 0, 0, 0.596));
     filter: drop-shadow(60px 60px 5px rgba(0, 0, 0, 0.815));
     justify-content: center;
+    cursor: pointer;
   }
   
   .types {
