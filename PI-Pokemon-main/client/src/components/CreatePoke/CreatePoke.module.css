@@ -37,7 +37,7 @@
     margin-left: 800px;
   }
   .carTypes{
-    margin-top: -500px;
+    margin-top: -580px;
   }
   .titletype {
     /* margin: 12px 0px 3px 0px; */
@@ -56,6 +56,7 @@
     font-size: 18px;
     letter-spacing: 1px;
     margin-left: 60px;
+    margin-top: 3px;
   }
   
   .typeImg {
