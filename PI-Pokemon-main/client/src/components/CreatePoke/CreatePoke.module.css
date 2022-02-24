@@ -74,15 +74,13 @@
     font-size: 12px;
     letter-spacing: 2px;
     background-color: #888782;
-    cursor: pointer;
-    
-    
   }
   
   .btn:hover {
     background-color: rgba(255, 255, 255, 0.383);
     color: rgb(0, 0, 0);
     margin-left: 60px;
+    cursor: pointer;
   }
   
   .error {
